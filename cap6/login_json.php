@@ -13,6 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		// $usu tiene campos correo y codRes, correo 
 		$_SESSION['usuario'] = $usu;
 		$_SESSION['carrito'] = [];
+
+		$ahora = time();
+		$_SESSION['ultima_actividad'] = $ahora;
+		
 		echo "TRUE";
 		
 	}	
