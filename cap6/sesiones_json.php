@@ -1,6 +1,6 @@
 Después:
 <?php
-function comprobar_sesion(int $timeout = 900): bool { // 900s = 15 min
+function comprobar_sesion(int $timeout = 30): bool { // 900s = 15 min
 session_start();
 // Si no hay usuario, no hay sesión válida
 if (!isset($_SESSION['usuario'])) {
